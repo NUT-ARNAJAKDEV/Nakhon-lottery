@@ -388,12 +388,11 @@ svg {
     .stopwatch {
         justify-content: center;
         align-items: center;
-        /* width: 590px; */
         width: 592px;
         height: 90px;
         padding-top: 5px;
         margin-top: 10px;
-        background-color:#fff;
+        background-color: #fff;
         display: flex;
         padding-right: 5px;
         border-radius: 8px;
@@ -407,12 +406,52 @@ svg {
     .hero_wrapper {
         padding: 10px;
         height: 650px;
-        
     }
 
     .stopwatch_detail {
         padding-bottom: 42px;
         font-size: 23px;
+    }
+
+    /* เพิ่มส่วนนี้เพื่อปรับขนาดตัวหนังสือใน .hero_detail_threef */
+    .hero_img3_part1 .hero_detail_threef p,
+    .hero_img3_part2 .hero_detail_threeb p,
+    .hero_img3_part3 .hero_detail_two p {
+        font-size: 14px; /* ปรับขนาดตัวหนังสือตามที่คุณต้องการ */
+    }
+
+    .hero_detail_threef,
+    .hero_detail_threeb,
+    .hero_detail_two{
+        margin: 0 2px;
+    }
+
+    .hero_threef{
+        margin-bottom: 4px;
+    }
+
+    .hero_two{
+        margin: 0 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_img3_part1 .hero_threef h1,
+    .hero_img3_part2 .hero_threeb h1{
+        font-size: 38px;
+    }
+
+    .hero_img3_part3 .hero_two h1{
+        font-size: 60px;
+        margin: 9px 0;
+    }
+
+    .hero_img2_part1 .hero_detail_one p{
+        font-size: 24px;
+    }
+
+    .hero_img2_part1 .hero_one h1{
+        font-size: 82px;
     }
 }
 
