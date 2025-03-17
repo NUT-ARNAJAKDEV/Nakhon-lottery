@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;600;700&display=swap');
+
+.hero_wrapper {
+    height: 550px;
+    overflow: hidden;
+    background-color: #161108;
+    padding: 20px 0;
+}
+
+.hero_con {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidenav_con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* เพิ่มช่องว่างระหว่าง sidenav และ stopwatch */
+}
+
+.sidenav {
+    background-color: #fff;
+    height: 385px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 3px;
+    z-index: 1;
+    border-top: 3px solid #FC8420;
+}
+
+.stopwatch{
+    background-color: #fff;
+    width: 300px;
+    height: 105px;
+    border-radius: 3px;
+    display: column;
+}
+
+.stopwatch_detail{
+    height: 25px;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.stopwatch_time {
+    height: 80px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    padding-bottom: 6px;
+
+    .stw_days{
+        display: column;
+        text-align: center;
+        background-color: #FC8420;
+        margin: 0 10px;
+        height: 76px;
+        width: 50px;
+        border-radius: 4px;
+
+        h2{
+            font-family: sans-serif;
+            font-size: 32px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    }
+
+    .stw_hour{
+        display: column;
+        text-align: center;
+        background-color: #FC8420;
+        margin: 0 10px;
+        height: 76px;
+        width: 50px;
+        border-radius: 4px;
+
+        h2{
+            font-family: sans-serif;
+            font-size: 32px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    }
+
+    .stw_min{
+        display: column;
+        text-align: center;
+        background-color: #FC8420;
+        margin: 0 10px;
+        height: 76px;
+        width: 50px;
+        border-radius: 4px;
+
+        h2{
+            font-family: sans-serif;
+            font-size: 32px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    }
+
+    .stw_sec{
+        display: column;
+        text-align: center;
+        background-color: #FC8420;
+        margin: 0 10px;
+        height: 76px;
+        width: 50px;
+        border-radius: 4px;
+
+        h2{
+            font-family: sans-serif;
+            font-size: 32px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    }
+}
+
+svg {
+    height: 16px;
+    width: 16px;
+}
+
+.sidenav a {
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.sidenav a:hover {
+    background-color: #FC8420;
+    color: #fff;
+}
+
+/* แบ่งเป็น 3 ส่วนในแนว column */
+.hero_img_container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* แต่ละส่วน */
+.hero_img1 {
+    max-height: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* จัดข้อความให้อยู่ตรงกลางแนวนอน */
+    .hero_title {
+        max-height: 40px;
+        h3 {
+            font-size: 27px;
+            font-weight: bold;
+            color: #161108;
+            /* ลบ margin ออกเพื่อให้จัดกึ่งกลางได้สมบูรณ์ */
+        }
+    }
+
+    .hero_date {
+        max-height: 30px;
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #161108;
+            /* ลบ margin ออก */
+        }
+    }
+}
+
+.hero_img2 {
+    background-color: #fff;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    height: 170px;
+}
+
+.hero_img2_part1 {
+    background-color: #FC8420;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    /* ใช้ flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    text-align: center;
+    /* จัดข้อความให้อยู่ตรงกลาง */
+    height: 100%;
+    width: 100%;
+
+    .hero_detail_one {
+        height: 30px;
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .hero_one {
+        h1 {
+            font-size: 96px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+        }
+    }
+}
+
+/* hero_img3 แบ่งเป็น 3 ส่วน */
+.hero_img3 {
+    background-color: #fff;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    /* ใช้ Flexbox */
+    gap: 10px;
+    /* เว้นขอบเล็กน้อย */
+    height: 170px;
+}
+
+/* ส่วนที่ 1 */
+.hero_img3_part1 {
+    background-color: #FC8420;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    /* ใช้ flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    text-align: center;
+    height: 100%;
+
+    .hero_detail_threef {
+        height: 30px;
+        margin-top: 6px;
+
+        /* จัดข้อความให้อยู่ตรงกลาง */
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .hero_threef {
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+        }
+    }
+
+}
+
+/* ส่วนที่ 2 */
+.hero_img3_part2 {
+    background-color: #FC8420;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    /* ใช้ flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    text-align: center;
+    height: 100%;
+
+    .hero_detail_threeb {
+        height: 30px;
+        margin-top: 6px;
+
+        /* จัดข้อความให้อยู่ตรงกลาง */
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .hero_threeb {
+        margin-bottom: 4px;
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+        }
+    }
+}
+
+/* ส่วนที่ 3 */
+.hero_img3_part3 {
+    background-color: #FC8420;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    /* ใช้ flexbox */
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    text-align: center;
+    height: 100%;
+
+    .hero_detail_two {
+        height: 30px;
+
+        /* จัดข้อความให้อยู่ตรงกลาง */
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .hero_two {
+        h1 {
+            font-size: 96px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 2px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+        display: none;
+    }
+
+    .hero_con {
+        flex-direction: column-reverse; /* ทำให้ .stopwatch อยู่ด้านล่าง */
+        align-items: center;
+    }
+
+    .stopwatch {
+        justify-content: center;
+        align-items: center;
+        /* width: 590px; */
+        width: 592px;
+        height: 90px;
+        padding-top: 5px;
+        margin-top: 10px;
+        background-color:#fff;
+        display: flex;
+        padding-right: 5px;
+        border-radius: 8px;
+    }
+
+    .hero_img_container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero_wrapper {
+        padding: 10px;
+        height: 650px;
+        
+    }
+
+    .stopwatch_detail {
+        padding-bottom: 42px;
+        font-size: 23px;
+    }
+}
+

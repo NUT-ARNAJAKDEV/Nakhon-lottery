@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;600;700&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 100%;
+    height: auto; /* เปลี่ยนเป็น auto เพื่อให้ปรับตามเนื้อหา */
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.logo {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 2rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    font-weight: bold;
+    color: #797979;
+    display: flex;
+    align-items: center;
+    margin-right: 3.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-size: 2.1rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    text-align: center;
+    margin: 0; /* ลบ margin ที่ไม่จำเป็น */
+}
+
+.logo img {
+    height: 3.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    width: 3.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    margin-right: 0.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+}
+
+.group {
+    display: flex;
+    flex-grow: 1; /* ทำให้ group ขยายเต็มพื้นที่ที่เหลือ */
+}
+
+.group .searchBar {
+    flex-grow: 3; /* ทำให้ searchBar ขยายเต็มพื้นที่ที่เหลือ */
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    width: 100%; /* เปลี่ยนเป็น 100% เพื่อให้ปรับตามขนาด parent */
+}
+
+.group .searchBar input {
+    width: 100%;
+    height: 2.8rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    padding: 0.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    font-size: 1rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    padding-left: 1rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+}
+
+.group .action_button {
+    display: flex;
+    color: #838383;
+    justify-content: flex-end;
+    gap: 1rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+}
+
+.group .action_button div {
+    font-size: 1.5rem; /* ใช้ rem เพื่อให้ปรับขนาดตามขนาดตัวอักษรหลัก */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.group .action_button div:hover {
+    color: #FC8420;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* เปลี่ยนทิศทางเป็นแนวตั้ง */
+        align-items: stretch; /* ขยายองค์ประกอบให้เต็มความกว้าง */
+        padding: 10px;
+    }
+
+    .logo {
+        
+        margin-right: 0; /* ลบ margin */
+        justify-content: center; /* จัดให้อยู่ตรงกลาง */
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem; /* ลดขนาดตัวอักษร */
+    }
+
+    .logo img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .group {
+        flex-direction: flex; /* เปลี่ยนทิศทางเป็นแนวตั้ง */
+    }
+
+    .group .searchBar {
+        margin-right: 0; /* ลบ margin */
+        margin-bottom: 1rem; /* เพิ่ม margin ด้านล่าง */
+    }
+
+    .group .action_button {
+        justify-content: space-around; /* กระจายไอคอนให้เท่ากัน */
+    }
+
+    .action_button{
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1{
+        display:none;
+    }
+}
