@@ -159,4 +159,20 @@
     .info_amount p {
       font-size: 13px; /* ลดขนาดฟอนต์สำหรับหน้าจอขนาดเล็กมาก */
     }
+
+    .info_title{
+      font-size: 16px;
+    }
+
+    .info_hr {
+      width: 14px;
+      height: 6px;
+      background-color: #FC8420;
+      border: none;
+      margin: 20px 10px 0 22px;
+    }
+
+    .info_more_button{
+      font-size: 12px;
+    }
   }
