@@ -5,9 +5,9 @@ function Footer() {
   const currentYear = new Date().getFullYear(); // ดึงปี ค.ศ. ปัจจุบัน
 
   return (
-    <footer>
+    <div className={styles.footer}>
         <p>Copyright © {currentYear}</p> {/* แสดงปี ค.ศ. ปัจจุบัน */}
-    </footer>
+    </div>
   );
 }
 
