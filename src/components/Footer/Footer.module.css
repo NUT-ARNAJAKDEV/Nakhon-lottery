@@ -11,9 +11,7 @@ footer {
 
 @media (max-width: 480px) {
     footer {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: none;
     }
 
 }
