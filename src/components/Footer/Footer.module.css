@@ -9,7 +9,7 @@ footer {
     font-size: 14px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
     footer {
         display: none;
     }
