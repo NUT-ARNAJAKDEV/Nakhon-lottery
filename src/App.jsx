@@ -8,7 +8,6 @@ import Hero from './components/Hero/Hero'
 import Order from './components/Order/Order'
 import Info from './components/Info/Info'
 import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +19,6 @@ function App() {
       <Order />
       <Info />
       <Contact />
-      <Footer />
     </>
   )
 }
